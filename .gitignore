@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# TypeScript cache
+*.tsbuildinfo
+
+# IDE settings (e.g., VSCode)
+.vscode/
+
+# Optional: ignore package-lock.json if you don't want to track it (recommended to leave it for consistency)
+# package-lock.json

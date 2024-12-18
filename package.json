@@ -1,0 +1,19 @@
+{
+  "name": "duckcode-0.0.1",
+  "version": "1.0.0",
+  "main": "./dist/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "electron": "^33.2.1"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.4.38"
+  }
+}

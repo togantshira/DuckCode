@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "ES2017",           // Set target to ES2017
     "module": "commonjs",
+    "lib": ["ES2017"],            // Include ES2017 library
+    "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "outDir": "./dist",
-    "types": ["node", "electron"]
+    "types": ["node", "electron"],
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "src/**/*"

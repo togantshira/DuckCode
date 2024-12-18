@@ -10,10 +10,9 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "electron": "^33.2.1"
-  },
   "devDependencies": {
-    "@types/electron": "^1.4.38"
+    "@types/electron": "^1.4.38",
+    "electron": "^33.2.1",
+    "typescript": "^5.7.2"
   }
 }

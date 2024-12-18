@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DuckCode</title>
-  <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckCode Editor</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <div id="app">
-    <h1>Welcome to DuckCode!</h1>
-  </div>
+    <div class="editor-container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Explorer</a></li>
+                <li><a href="#">Source Control</a></li>
+                <li><a href="#">Run</a></li>
+                <li><a href="#">Extensions</a></li>
+            </ul>
+        </div>
+        <div class="editor-main">
+            <div class="editor-header">
+                <div class="header-tabs">
+                    <div class="tab active">index.ts</div>
+                    <div class="tab">style.css</div>
+                </div>
+                <div class="header-actions">
+                    <button class="action-btn">Save</button>
+                    <button class="action-btn">Run</button>
+                </div>
+            </div>
+            <div class="editor-screen">
+                <textarea id="codeEditor" class="code-editor" placeholder="Write your code here..."></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

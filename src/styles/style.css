@@ -1,0 +1,200 @@
+/* style.css */
+
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Setup */
+.editor-container {
+    display: flex;
+    height: 95%;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #252526;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 240px;
+    background-color: #333;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #b6b6b6;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.sidebar a.active {
+    background-color: #007acc;
+    color: white;
+}
+
+/* Main Editor Area */
+.editor-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #2d2d2d;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+
+/* Header */
+.editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tab {
+    padding: 8px 16px;
+    background-color: #444;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab.active {
+    background-color: #007acc;
+}
+
+.tab:hover {
+    background-color: #555;
+}
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.action-btn {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #005f8a;
+}
+
+.action-btn:focus {
+    outline: none;
+}
+
+/* Code Editor */
+.editor-screen {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.code-editor {
+    width: 100%;
+    height: 100%;
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    border: none;
+    padding: 20px;
+    resize: none;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.code-editor:focus {
+    border: 2px solid #007acc;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Hover Effects */
+.sidebar a.active, .tab.active {
+    background-color: #007acc;
+    color: white;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+    .editor-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .editor-main {
+        flex: 1;
+    }
+
+    .editor-header {
+        flex-direction: column;
+    }
+}
